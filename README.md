@@ -40,3 +40,26 @@ This project uses the following technologies:
 1. Clone the repository:
    ```bash
    git clone https://github.com/ritoluki/bookstore.git
+2. Navigate to the project directory:
+    ```bash
+   cd bookstore
+3. Set up the database:
+
+Import the dbbansachma.sql file into your MySQL database.
+Update the database connection settings in connection.php.
+Start a local server:
+
+If you are using XAMPP, place the project folder in the htdocs directory and start Apache and MySQL from the XAMPP control panel.
+Usage
+Open your web browser and navigate to http://localhost/bookstore.
+Register a new account or log in with an existing account.
+Browse and search for books.
+Add books to your shopping cart and proceed to checkout.
+Admins can log in to the admin interface to manage books and orders.
+Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
