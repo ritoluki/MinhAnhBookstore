@@ -1,0 +1,201 @@
+.gio-hang-trong {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product_cart {
+    display: flex;            /* Use flexbox for alignment */
+    justify-content: space-between; /* Distribute space between elements */
+}
+
+.product_cart div {
+    width: 35%;                /* Set width to 20% */
+    float: right;             /* Align to the right */
+    text-align: right;        /* Align text to the right */
+    margin-top: 10px;         /* Optional: add some space above */
+}
+
+.product_cart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delete-button {
+    background-color: aqua; /* Change color as needed */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.div_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between each element */
+}
+
+.div_detail p {
+    margin: 10px 10px;
+    font-size: 15px;
+}
+
+.select-button {
+    background-color: red; /* Default background */
+    color: black; /* Default text color */
+    border: 1px solid #007bff; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.select-button.selected {
+    background-color: green; /* Background color when selected */
+    color: white; /* Text color when selected */
+}
+
+.advanced-search {
+    display: none;
+    /* các thuộc tính khác */
+}
+.advanced-search.open {
+    display: block;
+    /* các thuộc tính khác khi mở */
+}
+.star {
+    font-size: 20px;
+    color: #f39c12; /* Yellow for the stars */
+    padding-right: 2px;
+}
+
+.star.empty {
+    color: #ccc; /* Light gray for empty stars */
+}
+
+.star.half {
+    color: #f39c12; /* You can use a different color for half stars if you wish */
+}
+
+.no-rating {
+    color: red; /* Red color for "No ratings yet" message */
+    font-size: 18px;
+    font-weight: bold;
+}
+#rating-section {
+    display: flex;
+    align-items: center;          /* Center items vertically */
+    justify-content: space-between; /* Space between items horizontally */
+    width: 70%;                     /* Width of the section */
+    margin: 0 auto;                 /* Center the section horizontally in its container */
+    padding: 10px;
+    text-align: center;             /* Center align text within flex items */
+}
+
+
+.star-rating {
+    display: flex;
+    justify-content: center; /* Center the stars horizontally */
+    width: 100%; /* Control the width of the star section */
+}
+
+.star {
+    padding: 2%;
+    font-size: 30px;
+    color: yellow; /* Default color for the stars (silver) */
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%; /* Control the width of the text area */
+    padding: 10px;
+    margin: 0 10px; /* Add some margin between the text area and the button */
+    resize: none; /* Disable resizing the textarea */
+    height: 80px; /* Set the height of the textarea */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.product {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.ptkm {
+    position: absolute;
+    top: 10px; /* Điều chỉnh vị trí của ptkm từ trên xuống */
+    right: 10px; /* Điều chỉnh vị trí của ptkm từ phải sang */
+    padding: 5px 15px;
+    background-color: red; /* Màu nền đỏ */
+    color: gold; /* Màu chữ vàng lấp lánh */
+    font-weight: bold;
+    border-radius: 50%; /* Border hình tròn */
+    font-size: 16px; /* Cỡ chữ */
+    text-align: center;
+    box-shadow: 0 0 10px gold; /* Thêm hiệu ứng lấp lánh vàng */
+    z-index: 10; /* Đảm bảo ptkm nằm trên ảnh */
+}
+
+.ptkm:hover {
+    text-shadow: 0 0 15px gold, 0 0 30px gold; /* Hiệu ứng lấp lánh thêm khi hover */
+}
+.old-price {
+    text-decoration: line-through;  /* Thêm dấu gạch ngang */
+    color: #ff0000 !important;  /* Màu đỏ cho giá gốc, dùng !important để ưu tiên */
+    font-weight: bold;  /* Đậm để nổi bật */
+    margin-bottom: 5px;  /* Khoảng cách giữa giá gốc và giá sau khuyến mãi */
+    display: inline; /* Hiển thị nằm ngang */
+    margin-right: 10px; /* Khoảng cách giữa giá và phần trăm khuyến mãi */
+}
+
+/* Container chứa các mục khuyến mãi */
+.khuyenmai-container {
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 20px;            
+    justify-content: center;
+    width: 1600px;
+}
+
+/* Định dạng từng mục khuyến mãi */
+.khuyenmai-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    width: 1000px;            
+    box-sizing: border-box;  
+    text-align: center;     
+    padding: 20px;          
+    border-radius: 8px;     
+}
+
+/* Điều chỉnh chiều rộng cho các mục khi màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .khuyenmai-item {
+        width: 100%; 
+    }
+}
+
+
+
+
+
+
+
