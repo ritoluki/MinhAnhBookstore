@@ -39,7 +39,7 @@ This project uses the following technologies:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ritoluki/bookstore.git
+   git clone https://github.com/username/bookstore.git
 2. Navigate to the project directory:
     ```bash
    cd bookstore
